@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+.next
+storybook-static
+
+# Turbo
+.turbo
+
+# TypeScript
+*.tsbuildinfo
+
+# Generated tokens — rebuilt from figma/tokens.json
+# Ignore the real generated files but keep the stub
+packages/tokens/src/generated/tokens.css
+# Do NOT ignore tokens.ts — the stub must be committed
+
+# Env
+.env
+.env.local

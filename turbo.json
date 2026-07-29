@@ -1,0 +1,34 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build:tokens": {
+      "inputs": ["figma/tokens.json", "style-dictionary.config.mjs"],
+      "outputs": ["src/generated/**"]
+    },
+    "build": {
+      "dependsOn": ["^build", "build:tokens"],
+      "inputs": ["src/**", "package.json", "tsconfig.json", "vite.config.ts"],
+      "outputs": ["dist/**", ".tsbuildinfo"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "typecheck": {
+      "dependsOn": ["^build", "build:tokens"],
+      "inputs": ["src/**", "tsconfig.json"]
+    },
+    "test": {
+      "dependsOn": ["^build", "build:tokens"],
+      "inputs": ["src/**", "**/*.test.{ts,tsx}", "vitest.config.ts"]
+    },
+    "lint": {
+      "inputs": ["src/**"]
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

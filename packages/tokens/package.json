@@ -1,0 +1,41 @@
+{
+  "name": "@uilib/tokens",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:tokens": "node scripts/build-tokens.mjs",
+    "build": "pnpm run build:tokens && vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist src/generated/*.css src/generated/*.ts"
+  },
+  "devDependencies": {
+    "@uilib/tsconfig": "workspace:*",
+    "@vanilla-extract/css": "^1.15.0",
+    "@vanilla-extract/vite-plugin": "^4.0.0",
+    "style-dictionary": "^4.1.0",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.0.0"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/css": "^1.15.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  }
+}
