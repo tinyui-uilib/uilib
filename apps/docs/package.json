@@ -1,5 +1,5 @@
 {
-  "name": "@uilib/docs",
+  "name": "@tinyui-uilib/docs",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "chromatic": "chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
-    "@uilib/tokens": "workspace:*",
-    "@uilib/ui": "workspace:*",
+    "@tinyui-uilib/tokens": "workspace:*",
+    "@tinyui-uilib/ui": "workspace:*",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },

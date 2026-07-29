@@ -1,5 +1,5 @@
 {
-  "name": "@uilib/tokens",
+  "name": "@tinyui-uilib/tokens",
   "version": "0.1.0",
   "type": "module",
   "exports": {
@@ -23,7 +23,7 @@
     "clean": "rm -rf dist src/generated/*.css src/generated/*.ts"
   },
   "devDependencies": {
-    "@uilib/tsconfig": "workspace:*",
+    "@tinyui-uilib/tsconfig": "workspace:*",
     "@vanilla-extract/css": "^1.15.0",
     "@vanilla-extract/vite-plugin": "^4.0.0",
     "style-dictionary": "^4.1.0",

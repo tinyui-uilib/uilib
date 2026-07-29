@@ -32,8 +32,8 @@ const config: StorybookConfig = {
       ...(Array.isArray(config.resolve.alias)
         ? {}
         : (config.resolve.alias ?? {})),
-      "@uilib/tokens": resolve(repoRoot, "packages/tokens/src/index.ts"),
-      "@uilib/ui": resolve(repoRoot, "packages/ui/src/index.ts"),
+      "@tinyui-uilib/tokens": resolve(repoRoot, "packages/tokens/src/index.ts"),
+      "@tinyui-uilib/ui": resolve(repoRoot, "packages/ui/src/index.ts"),
     };
 
     return config;

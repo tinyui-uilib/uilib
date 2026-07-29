@@ -1,6 +1,6 @@
 import { recipe } from "@vanilla-extract/recipes";
 import { style, keyframes } from "@vanilla-extract/css";
-import { vars } from "@uilib/tokens";
+import { vars } from "@tinyui-uilib/tokens";
 
 // ─── Spinner ────────────────────────────────────────────────────────────────
 // CSS-only. No Framer Motion. Scoped animation name — won't clash with

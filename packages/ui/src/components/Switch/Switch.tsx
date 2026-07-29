@@ -9,7 +9,7 @@ import {
   switchLabelClass,
   type SwitchSize,
 } from './Switch.css';
-import { vars } from '@uilib/tokens';
+import { vars } from '@tinyui-uilib/tokens';
 
 export type { SwitchSize };
 

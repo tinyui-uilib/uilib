@@ -1,6 +1,6 @@
 import { recipe, type RecipeVariants } from "@vanilla-extract/recipes";
 import { style } from "@vanilla-extract/css";
-import { vars } from "@uilib/tokens";
+import { vars } from "@tinyui-uilib/tokens";
 
 export const switchRootRecipe = recipe({
   base: {

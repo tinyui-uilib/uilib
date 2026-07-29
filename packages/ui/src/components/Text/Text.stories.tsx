@@ -232,11 +232,11 @@ export const ProseExample: Story = {
       </Text>
       <Heading level={2}>Installation</Heading>
       <Text>
-        Add <Text as="strong">@uilib/ui</Text> to your project dependencies.
+        Add <Text as="strong">@tinyui-uilib/ui</Text> to your project dependencies.
         Make sure you have <Text as="em">React 18 or later</Text> installed.
       </Text>
       <Text mono size="sm" color="secondary">
-        pnpm add @uilib/ui @uilib/tokens
+        pnpm add @tinyui-uilib/ui @tinyui-uilib/tokens
       </Text>
     </div>
   ),

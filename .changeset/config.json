@@ -10,5 +10,5 @@
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@uilib/docs", "@uilib/tsconfig"]
+  "ignore": ["@tinyui-uilib/docs", "@tinyui-uilib/tsconfig"]
 }

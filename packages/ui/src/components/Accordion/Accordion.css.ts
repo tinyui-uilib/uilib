@@ -1,5 +1,5 @@
 import { style, keyframes } from "@vanilla-extract/css";
-import { vars } from "@uilib/tokens";
+import { vars } from "@tinyui-uilib/tokens";
 
 // ─── Animated height ──────────────────────────────────────────────────────────
 // The height: 0 → auto problem: CSS cannot animate to `auto`.

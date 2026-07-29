@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Preview, Decorator, StoryContext } from '@storybook/react';
-import { defaultTheme, darkTheme, brandTheme } from '@uilib/tokens';
+import { defaultTheme, darkTheme, brandTheme } from '@tinyui-uilib/tokens';
 
 const THEMES = {
   default: defaultTheme,

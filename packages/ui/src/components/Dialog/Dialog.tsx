@@ -18,7 +18,7 @@ import {
 export type { DialogSize };
 
 // ─── Install ──────────────────────────────────────────────────────────────────
-// pnpm --filter @uilib/ui add @radix-ui/react-dialog
+// pnpm --filter @tinyui-uilib/ui add @radix-ui/react-dialog
 
 // ─── Context ──────────────────────────────────────────────────────────────────
 // Size cascades from Root → Content so consumers set it once.

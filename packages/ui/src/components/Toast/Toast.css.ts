@@ -1,6 +1,6 @@
 import { style, keyframes } from "@vanilla-extract/css";
 import { recipe, type RecipeVariants } from "@vanilla-extract/recipes";
-import { vars } from "@uilib/tokens";
+import { vars } from "@tinyui-uilib/tokens";
 
 // ─── Keyframes ────────────────────────────────────────────────────────────────
 // Slides in from the right, slides out to the right.

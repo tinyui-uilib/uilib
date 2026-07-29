@@ -1,5 +1,5 @@
 import { style, keyframes } from "@vanilla-extract/css";
-import { vars } from "@uilib/tokens";
+import { vars } from "@tinyui-uilib/tokens";
 
 const popIn = keyframes({
   from: { opacity: 0, transform: "scale(0.96) translateY(-4px)" },
