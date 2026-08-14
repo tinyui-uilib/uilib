@@ -30,7 +30,7 @@ jobs:
           node-version: 22
           cache: pnpm
           registry-url: https://npm.pkg.github.com
-          scope: '@uilib'
+          scope: "@uilib"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -47,8 +47,9 @@ jobs:
         with:
           publish: pnpm run release
           version: pnpm run version-packages
-          title: 'chore: version packages'
-          commit: 'chore: version packages'
+          title: "chore: version packages"
+          commit: "chore: version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          NPM_TOKEN: ${{ secrets.RELEASE_TOKEN }}
