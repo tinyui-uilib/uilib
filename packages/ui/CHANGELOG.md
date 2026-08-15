@@ -1,5 +1,16 @@
 # @tinyui-uilib/ui
 
+## 1.0.0
+
+### Major Changes
+
+- d891f4e: Migration to npm registry
+
+### Patch Changes
+
+- Updated dependencies [d891f4e]
+  - @tinyui-uilib/tokens@1.0.0
+
 ## 0.2.0
 
 ### Minor Changes
