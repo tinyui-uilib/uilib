@@ -29,8 +29,8 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-          registry-url: https://npm.pkg.github.com
-          scope: '@uilib'
+          registry-url: https://registry.npmjs.org
+          scope: "@tinyui-uilib"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -72,7 +72,7 @@ jobs:
           node-version: 20
           cache: pnpm
           registry-url: https://npm.pkg.github.com
-          scope: '@uilib'
+          scope: "@uilib"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
