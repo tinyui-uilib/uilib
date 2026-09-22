@@ -1,5 +1,11 @@
 # @tinyui-uilib/ui
 
+## 1.1.0
+
+### Minor Changes
+
+- c1d6384: fixed style naming bug
+
 ## 1.0.0
 
 ### Major Changes
