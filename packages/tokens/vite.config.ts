@@ -7,12 +7,21 @@ import { createHash } from "node:crypto";
 // Monorepo root — two levels up from packages/tokens
 const monoRoot = resolve(import.meta.dirname, "../..");
 
-function veIdentifier({ filePath }: { filePath: string }): string {
-  const normalized = filePath
+function veIdentifier({
+  filePath,
+  debugId,
+}: {
+  hash: string;
+  filePath: string;
+  debugId?: string | undefined;
+  packageName?: string | undefined;
+}): string {
+  const normalizedPath = filePath
     .replace(/\\/g, "/")
     .replace(/^src\//, "tokens/src/");
 
-  return "_" + createHash("md5").update(normalized).digest("hex").slice(0, 8);
+  const key = `${normalizedPath}:${debugId ?? ""}`;
+  return "_" + createHash("md5").update(key).digest("hex").slice(0, 8);
 }
 
 export default defineConfig({
