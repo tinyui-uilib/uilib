@@ -1,5 +1,16 @@
 # @tinyui-uilib/ui
 
+## 1.3.0
+
+### Minor Changes
+
+- 62d2806: each design token is now to unique css variable name
+
+### Patch Changes
+
+- Updated dependencies [62d2806]
+  - @tinyui-uilib/tokens@1.1.0
+
 ## 1.2.0
 
 ### Minor Changes
