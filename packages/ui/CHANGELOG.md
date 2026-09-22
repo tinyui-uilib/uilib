@@ -1,5 +1,11 @@
 # @tinyui-uilib/ui
 
+## 1.3.1
+
+### Patch Changes
+
+- b40fec6: fix: preserve use client in vite output
+
 ## 1.3.0
 
 ### Minor Changes
