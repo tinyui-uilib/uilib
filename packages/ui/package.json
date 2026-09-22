@@ -14,7 +14,7 @@
         "default": "./dist/index.cjs"
       }
     },
-    "./styles.css": "./dist/styles.css"
+    "./style.css": "./dist/style.css"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
