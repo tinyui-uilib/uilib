@@ -1,5 +1,11 @@
 # @tinyui-uilib/tokens
 
+## 1.0.1
+
+### Patch Changes
+
+- 0fea8e6: Fix CSS variable name mismatch between tokens and ui packages
+
 ## 1.0.0
 
 ### Major Changes
