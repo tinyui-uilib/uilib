@@ -1,5 +1,11 @@
 # @tinyui-uilib/ui
 
+## 1.3.2
+
+### Patch Changes
+
+- cdc8c34: fix: per component output file for correct tree shaking
+
 ## 1.3.1
 
 ### Patch Changes
