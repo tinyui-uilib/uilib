@@ -32,7 +32,6 @@ export default defineConfig({
     lib: {
       entry: resolve(import.meta.dirname, "src/index.ts"),
       formats: ["es", "cjs"],
-      fileName: (format) => `index.${format === "es" ? "mjs" : "cjs"}`,
     },
 
     rollupOptions: {
@@ -45,12 +44,24 @@ export default defineConfig({
         /^@radix-ui\/.*/,
       ],
 
-      output: {
-        preserveModules: true,
-        preserveModulesRoot: "src",
-        exports: "named",
-        // removed output.plugins
-      },
+      output: [
+        {
+          format: "es",
+          preserveModules: true,
+          preserveModulesRoot: "src",
+          entryFileNames: "[name].mjs",
+          chunkFileNames: "[name].mjs",
+          exports: "named",
+        },
+        {
+          format: "cjs",
+          preserveModules: true,
+          preserveModulesRoot: "src",
+          entryFileNames: "[name].cjs",
+          chunkFileNames: "[name].cjs",
+          exports: "named",
+        },
+      ],
     },
 
     minify: false,
