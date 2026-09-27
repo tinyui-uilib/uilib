@@ -1,5 +1,11 @@
 # @tinyui-uilib/tokens
 
+## 1.1.1
+
+### Patch Changes
+
+- 7d9e740: added README files
+
 ## 1.1.0
 
 ### Minor Changes
