@@ -49,7 +49,11 @@ export default defineConfig({
           format: "es",
           preserveModules: true,
           preserveModulesRoot: "src",
-          entryFileNames: "[name].mjs",
+          entryFileNames: (chunk) => {
+            // Strip leaked tokens path
+            const name = chunk.name.replace(/^\.\.\/tokens\/src\//, "tokens/");
+            return `${name}.mjs`;
+          },
           chunkFileNames: "[name].mjs",
           exports: "named",
         },
@@ -57,7 +61,10 @@ export default defineConfig({
           format: "cjs",
           preserveModules: true,
           preserveModulesRoot: "src",
-          entryFileNames: "[name].cjs",
+          entryFileNames: (chunk) => {
+            const name = chunk.name.replace(/^\.\.\/tokens\/src\//, "tokens/");
+            return `${name}.cjs`;
+          },
           chunkFileNames: "[name].cjs",
           exports: "named",
         },
